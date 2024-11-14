@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', serif;
+  color: #ffffff;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.container {
+  background-color: #1f1f1f;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+.search-city-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+}
+
+#searchCity {
+  border: none;
+  background-color: #2e2e2e;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+#searchCityButton {
+  border: none;
+  background-color: #2e2e2e;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: -10px;
+  border-radius: 2px;
+}
+
+#searchCity::placeholder {
+  color: #ffffff;
+}
+
+.weather-forecast-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#cityName {
+  margin: 0px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#cityDate {
+  margin: 0px;
+  font-size: 12px;
+}
+
+#cityTemp {
+  margin: 0px;
+  font-size: 20px;
+}
+
+#cityTempMin,
+#cityTempMax {
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 45px;
+  font-size: 12px;
+}
+
+#cityTempMin {
+  margin-right: 15px;
+}
+
+.city-temp-min-max {
+  display: flex;
+}
+
+#weatherIcon img {
+  margin-top: 15px;
+  width: 75px;
+}
+
+.city-weather-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 12px;
+  row-gap: 12px;
+  font-size: 12px;
+}
+
+#feelsLike,
+#humidity,
+#wind,
+#pressure {
+  margin: 0px;
+}
+
+.weather-card {
+  display: flex;
+  align-items: center;
+  background-color: #2e2e2e;
+  width: 180px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.weather-card i {
+  font-size: 20px;
+  margin-right: 12px;
+}

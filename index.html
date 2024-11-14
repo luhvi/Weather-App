@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-city-container">
+        <button id="searchCityButton">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input type="text" placeholder="Search for a city..." id="searchCity" />
+      </div>
+      <div class="weather-forecast-container">
+        <p id="cityName"></p>
+        <p id="cityDate"></p>
+        <div id="weatherIcon">
+          <img src="http://openweathermap.org/img/wn/10d@4x.png" />
+        </div>
+        <p id="cityTemp"></p>
+        <div class="city-temp-min-max">
+          <p id="cityTempMin"></p>
+          <p id="cityTempMax"></p>
+        </div>
+        <div class="city-weather-info">
+          <div class="weather-card">
+            <i class="fa-solid fa-temperature-full"></i>
+            <p id="feelsLike"></p>
+          </div>
+          <div class="weather-card">
+            <i class="fa-solid fa-droplet"></i>
+            <p id="humidity"></p>
+          </div>
+          <div class="weather-card">
+            <i class="fa-solid fa-wind"></i>
+            <p id="wind"></p>
+          </div>
+          <div class="weather-card">
+            <i class="fa-solid fa-gauge-high"></i>
+            <p id="pressure"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/66cfa9a7a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
